@@ -1,7 +1,6 @@
 const prod = {
     MONGO: {
-        HOST: 'localhost',
-        PORT: 21412,
+        HOST: 'mongodb+srv://user1:orion123@orion-qm5y7.mongodb.net/medium-urls?retryWrites=true&w=majority',
     }
 };
 module.exports = prod;
