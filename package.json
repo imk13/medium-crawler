@@ -1,0 +1,35 @@
+{
+    "name": "medium-carwler",
+    "version": "1.0.0",
+    "description": "Crawl medium.com urls recursively.",
+    "main": "app.js",
+    "scripts": {
+        "start": "clear;node app.js",
+        "app:prod": "npm install && export NODE_ENV=prod;npm start;",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imk13/medium-carwler.git"
+    },
+    "keywords": [
+        "mediup-crawler",
+        "medium",
+        "crawler"
+    ],
+    "author": "imkx13",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/imk13/medium-carwler/issues"
+    },
+    "homepage": "https://github.com/imk13/medium-carwler#readme",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.3",
+        "jsdom": "^15.1.1",
+        "mongoose": "^5.5.12",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0"
+    }
+}
