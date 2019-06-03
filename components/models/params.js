@@ -7,7 +7,7 @@ const ObjectId = Schema.ObjectId;
 // create a schema
 let urlParamsSchema = new Schema({
     url: { type: ObjectId, ref: 'Url' },
-    md5: { type: String, unique: true, required: true },
+    md5: { type: String, unique: true, required: true, index: true },
     meta: {
         href: { type: String }
     },

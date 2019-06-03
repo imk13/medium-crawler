@@ -5,6 +5,7 @@
     "main": "app.js",
     "scripts": {
         "start": "clear;node app.js",
+        "app:prod": "npm install && export NODE_ENV=prod;npm start;",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

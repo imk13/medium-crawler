@@ -16,6 +16,8 @@ module.exports = {
     },
 
     "rules": {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true,
         "no-console": "off",
         "allow": ["log", "warn", "error"]
     }
