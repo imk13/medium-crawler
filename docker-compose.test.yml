@@ -1,0 +1,17 @@
+version: '3'
+services:
+  worker:
+    build: 
+      context: .
+      dockerfile: Dockerfile-test
+    restart: always
+    environment:
+      WAIT_HOSTS: database:27017
+    volumes: 
+      - ".:/home/nodejs/app"
+  database:
+    image: mongo:4.0
+    volumes:
+      - "./data/medium-urls:/data/medium-urls"
+    expose:
+      - 27017

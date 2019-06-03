@@ -1,0 +1,15 @@
+version: '3'
+services:
+  worker:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      WAIT_HOSTS: database:27017
+  database:
+    image: mongo:4.0
+    volumes:
+      - "./data/medium-urls:/data/medium-urls"
+    expose:
+      - 27017

@@ -5,7 +5,10 @@
     "main": "app.js",
     "scripts": {
         "start": "clear;node app.js",
-        "app:prod": "npm install && export NODE_ENV=prod;npm start;",
+        "app:test": "docker-compose -f docker-compose.test.yml up --build",
+        "app:prod": "docker-compose -f docker-compose.yml up -d",
+        "app:build": "docker-compose -f docker-compose.yml build",
+        "app:build:up": "docker-compose -f docker-compose.yml up -d --build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

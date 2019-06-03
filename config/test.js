@@ -1,6 +1,6 @@
 const test = {
     MONGO: {
-        HOST: 'mongodb://localhost/medium-urls',
+        HOST: 'mongodb://database/medium-urls',
     }
 };
 module.exports = test;
