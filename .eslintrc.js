@@ -2,7 +2,8 @@ module.exports = {
     "env": {
         "browser": true,
         "es6": true,
-        "amd": true
+        "amd": true,
+        "node": true
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -10,7 +11,7 @@ module.exports = {
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": 8,
         "sourceType": "module"
     },
 
