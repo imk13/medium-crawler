@@ -4,6 +4,7 @@
 const config = require('../../config');
 const Urls = require('../models/urls');
 module.exports = {
+    // To save url data in DB
     save: async function(data) {
         let url = new Urls(data);
         let err, result;
@@ -14,6 +15,7 @@ module.exports = {
         }
         return [err, result];
     },
+    // To get record from DB based on queryParams, e.g. find by md5
     getOneby: async function(params) {
         let err, result;
         try {
